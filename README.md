@@ -1,2 +1,2 @@
 # reweightedwakesleep
-code to train a directed neural network with stochastic layers and rbm prior using reweighted wake-sleep
+Code to train a directed neural network with stochastic layers and rbm prior using reweighted wake-sleep.
