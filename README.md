@@ -1,13 +1,13 @@
-# reweightedwakesleep
-Code to train a directed neural network with stochastic layers and rbm prior on the MNIST dataset.
+# Reweighted Wake-sleep
+Gnumpy code to train a directed neural network with stochastic layers and rbm prior on the MNIST dataset.
 The possible algorithms are wake-sleep and reweighted wake-sleep as described here: https://arxiv.org/abs/1406.2751.
 
-# Instructions
+# Code
 Download datasets from http://yann.lecun.com/exdb/mnist/ and place in /datasets/ directory (can be modified in config.py).
 
-Use python hm_rws.py to run the reweighted wakesleep algorithm with default settings. This fits the inference network q to samples generated from q, reweighted as in https://arxiv.org/abs/1406.2751
+The command python hm_rws.py runs the reweighted wakesleep algorithm with default settings. This fits the inference network q to samples generated from q, reweighted as in https://arxiv.org/abs/1406.2751
 
-Use python hm_contrastq.py to run the wakesleep algorithm with default settings. This fits the inference network q to samples generated from the generative network p, as in the usual wake-sleep algorithm.
+The command python hm_contrastq.py runs the wakesleep algorithm with default settings. This fits the inference network q to samples generated from the generative network p, as in the usual wake-sleep algorithm.
 
 The rbm prior in each case is trained using contrastive divergence.
 
